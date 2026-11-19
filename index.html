@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PromptSmith — Ready-made words for small businesses</title>
+<meta name="description" content="PromptSmith makes writing tools for one-person businesses and tiny teams: prompt packs, plug-in templates, trackers, and short how-to guides.">
+<style>
+  :root {
+    --primary: #7F1D1D;
+    --rose: #F472B6;
+    --bg: #FBF3E4;
+    --text: #2A1F1E;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: Georgia, 'Times New Roman', serif; line-height: 1.6; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px 64px; }
+  header { text-align: center; padding: 48px 0 8px; }
+  header img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary); }
+  header h1 { font-size: 2.6rem; color: var(--primary); letter-spacing: 0.02em; margin-top: 16px; }
+  .tagline { font-size: 1.25rem; font-style: italic; color: var(--primary); margin-top: 8px; }
+  .rule { width: 64px; height: 4px; background: var(--rose); margin: 28px auto; border-radius: 2px; }
+  section { margin-top: 40px; }
+  h2 { color: var(--primary); font-size: 1.5rem; margin-bottom: 12px; }
+  p { margin-bottom: 14px; }
+  .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 16px; }
+  .card { background: #fff; border: 1px solid #e5d9c3; border-top: 5px solid var(--primary); border-radius: 10px; padding: 22px; }
+  .card h3 { color: var(--primary); font-size: 1.15rem; margin-bottom: 6px; }
+  .price { font-size: 1.6rem; font-weight: bold; color: var(--primary); }
+  .price span { font-size: 0.85rem; font-weight: normal; }
+  .eta { display: inline-block; margin-top: 8px; font-size: 0.85rem; background: var(--bg); border: 1px solid #e5d9c3; border-radius: 20px; padding: 3px 12px; }
+  .card p { font-size: 0.95rem; margin-top: 10px; }
+  .steps { counter-reset: step; list-style: none; }
+  .steps li { counter-increment: step; margin-bottom: 10px; padding-left: 36px; position: relative; }
+  .steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--primary); color: #fff; text-align: center; line-height: 24px; font-size: 0.85rem; font-family: Arial, sans-serif; }
+  .cta { text-align: center; margin-top: 48px; }
+  .cta a { display: inline-block; background: var(--primary); color: #fff; text-decoration: none; font-family: Arial, sans-serif; font-weight: bold; padding: 14px 32px; border-radius: 8px; }
+  .cta a:hover { background: #671616; }
+  footer { text-align: center; margin-top: 48px; font-size: 0.85rem; color: #7a6a63; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="data:image/webp;base64,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" alt="PromptSmith logo">
+    <h1>PromptSmith</h1>
+    <p class="tagline">Ready-made words for small businesses — open, fill in, send.</p>
+  </header>
+  <div class="rule"></div>
+
+  <section>
+    <h2>What PromptSmith does</h2>
+    <p>PromptSmith makes writing tools for one-person businesses and tiny teams: prompt packs, plug-in templates, trackers, and short how-to guides. Each one is run on real jobs before it goes on sale — nothing is bought in bulk and relisted, nothing ships untested. You pay once, download at once, and get a plain setup sheet with it.</p>
+    <p>The opening product is the Small Business Prompt Set: 50 finished prompts for marketing, customer replies, product pages, social posts, and weekly planning, with matching templates and a tracker.</p>
+    <p>It is made for owners who do their own marketing between everything else — a shopkeeper, a freelancer, a team of two who need words that sound like them, without hiring a writer or sitting through a course.</p>
+  </section>
+
+  <section>
+    <h2>Products</h2>
+    <div class="products">
+      <div class="card">
+        <h3>Small Business Prompt Set</h3>
+        <p class="price">19 <span>USDC</span></p>
+        <span class="eta">Delivered same day</span>
+        <p>50 finished prompts for a small business, sorted by the job they do: marketing (10), customer replies (10), product pages (10), social posts (10), and weekly planning (10). Each prompt is complete — swap in your own business details where the brackets are and run it. Includes a one-page setup guide.</p>
+      </div>
+      <div class="card">
+        <h3>Creator Word Bundle</h3>
+        <p class="price">59 <span>USDC</span></p>
+        <span class="eta">Delivered in 1 day</span>
+        <p>The full 50-prompt set plus the 10 matching templates and the tracker, built to work as one set: the prompts draft the words, the templates give them shape, and the tracker keeps a record of what you published and what worked. Includes a setup guide and a 30-minute async Q&amp;A by message.</p>
+      </div>
+      <div class="card">
+        <h3>Tailored Prompt Set</h3>
+        <p class="price">179 <span>USDC</span></p>
+        <span class="eta">Delivered in 3–5 days</span>
+        <p>The full bundle plus a prompt set written to your brief: your products, your customers, your tone, your offers. Tell us how you work now and what the prompts need to do, and we build the tailored set, test it, and walk you through it in short written notes. Two rounds of small fixes included.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>Choose a pack.</li>
+      <li>Pay, then download at once.</li>
+      <li>Follow the one-page guide — most buyers are writing with it inside an hour.</li>
+      <li>If a file fails to do what its listing says, say so and it gets fixed at no charge.</li>
+    </ol>
+  </section>
+
+  <div class="cta">
+    <a href="https://marketplace.onvanar.com/orgs/promptsmith">Order on the Vanar Marketplace</a>
+  </div>
+
+  <footer>
+    <p>PromptSmith — ready-made words for small businesses.<br>Products are sold through the Vanar marketplace.</p>
+  </footer>
+</div>
+</body>
+</html>
